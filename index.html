@@ -1,22 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="icon" href="img/icon.png" type="image/jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/media.css">
+    <title>TUMO - Chat for tumo students</title>
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <div class="navbar">
+    <div class="page">
+        <!-- header -->
+        <header>
+            <div class="container header__container">
+                <!-- logo -->
                 <div class="logo">
-                    <a href="#"><img src="img/logo.png" alt=""></a>
+                    <a class="logo__link" href="#"><img src="img/logo.png" alt=""></a>
+                </div>
+                <!-- languages -->
+                <div class="lang">
+                    <select class="changelang">
+                        <option class="languages" value="en">EN</option>
+                        <option class="languages" value="hy" selected>HY</option>   
+                    </select>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
+        <!-- section -->
+        <section>
+            <div class="section__container container">
+                <div class="content">
+                    <div class="content__inner">
+                        <div class="content_header">
+                            <div class="lang_header">Բարի Գալուստ</div>
+                            <div class="hello"><img src="img/waving-hand.png" alt="logo"></div>
+                        </div>
+                        <div class="content_subheader lang_subheader">
+                            <div>Թումո Chat - թումոցիների համար</div>
+                        </div>
+                        <div class="content_title lang_title">
+                            *Միացիր մեզ և կիսվիր քո մտահաղացումներով և հարցերով*
+                        </div>
+                        <div class="content_button btn">
+                            <a class="lang_button" href="chat.html">Միացիր մեզ քո ԹՈՒՄՈ հասցեով</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="image">
+                    <div class="bcg"><img src="img/img1.png" class="" alt=""></div>
+                    <img src="img/doc4.png" class="layer img_forth" data-speed="-11" alt="">
+                    <img src="img/doc3.png" class="layer img_third" data-speed="-11" alt="">
+                    <img src="img/doc2.png" class="layer img_second" data-speed="-10" alt="">
+                    <img src="img/doc.png" class="layer img_main" data-speed="-20" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer>
+            <div class="footer__inner">
+                <div class="container footer__container">
+                    <div class="footer__copyright lang_footer">
+                        © 2021 Tumo Chat
+                    </div>
+                    <div class="socialnetworks">
+                        <div>
+                            <a target="blank" class="footer__links" href="https://tumo.org/">
+                                <img class="tumoicon" src="img/tumoicon.svg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a target="blank" class="footer__links" href="https://twitter.com/tumocenter">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a target="blank" class="footer__links" href="https://www.facebook.com/tumocenter/">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a target="blank" class="footer__links" href="https://twitter.com/tumocenter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a target="blank" class="footer__links" href="https://www.instagram.com/tumocenter/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a target="blank" class="footer__links" href="https://www.behance.net/tumocenter">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+    </div>
+    <script src="lang.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

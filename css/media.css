@@ -1,0 +1,137 @@
+@media only screen and (max-width: 1200px) {
+   .container {
+      max-width: 970px;
+   }
+   .navbar {
+      max-width: 1320px;
+   }
+   .content {
+      margin-top: 50px;
+   }
+}
+
+@media only screen and (max-width: 992px) {
+   .container {
+      max-width: 750px;
+   }
+   .image {
+      max-width: 100%;
+      margin-top: 20px;
+   }
+   .section__container {
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+   }
+}
+
+@media only screen and (max-width: 767px) {
+   .container {
+      max-width: none;
+   }
+   .image {
+      max-width: 100%;
+   }
+
+   .lang_button{
+      width: 70%;
+   }
+
+   .footer__copyright {
+      font-size: 13px;
+   }
+
+   /* fonts adaptive */
+   .content_header,
+   .content_subheader {
+      font-size: calc(24px + (18 + 18 * 0.7) * ((100vw - 320px) / 1300));
+   }
+   .content_title,
+   .footer__copyright {
+      font-size: calc(14px + (6 + 6 * 0.7) * ((100vw - 320px) / 1300));
+   }
+   .btn a {
+      font-size: calc(8px + (8 + 8 * 0.7) * ((100vw - 320px) / 1300));
+   }
+}
+
+@media only screen and (max-width: 570px) {
+   .img_main {
+      max-width: 350px;
+      top: 75px;
+      left: 75px;
+   }
+
+   .img_second {
+      max-width: 90px;
+      top: 250px;
+   }
+
+   .img_forth {
+      display: none;
+   }
+}
+
+@media only screen and (max-width: 490px) {
+   .hello {
+      max-width: 20px;
+   }
+   .img_main {
+      max-width: 300px;
+      top: 75px;
+      left: 55px;
+   }
+
+   .img_second {
+      max-width: 75px;
+      top: 250px;
+   }
+}
+
+@media only screen and (max-width: 425px) {
+   .hello {
+      max-width: 20px;
+   }
+   .img_main {
+      max-width: 250px;
+      top: 75px;
+      left: 55px;
+   }
+
+   .img_second {
+      max-width: 75px;
+      top: 225px;
+   }
+}
+
+@media only screen and (max-width: 370px) {
+   .hello {
+      max-width: 20px;
+   }
+   .img_main {
+      max-width: 200px;
+      top: 75px;
+      left: 55px;
+   }
+
+   .img_second {
+      max-width: 75px;
+      top: 175px;
+   }
+}
+
+@media only screen and (max-width: 340px) {
+   .hello {
+      max-width: 20px;
+   }
+   .img_main {
+      max-width: 200px;
+      top: 65px;
+      left: 45px;
+   }
+
+   .img_second {
+      max-width: 75px;
+      top: 175px;
+   }
+}
