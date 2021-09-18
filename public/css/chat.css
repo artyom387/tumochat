@@ -1,0 +1,169 @@
+/* fonts */
+
+@font-face {
+   font-family: 'FedraSansProArm';
+   src: url('../fonts/FedraSansArm-Bold.13f427c6.woff2');
+   font-weight: 700;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'FedraSansProArm';
+   src: url('../fonts/FedraSansArm-Medium.9a33237c.woff2');
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'FedraSansProArm';
+   src: url('../fonts/FedraSansArm-Book.306b15cf.woff2');
+   font-weight: normal;
+   font-style: normal;
+}
+
+/* scroll */
+
+html::-webkit-scrollbar {
+   width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+   background: #bdbdbd;
+}
+
+html::-webkit-scrollbar-track {
+   background-color: #fff;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+html,
+body {
+   font-family: 'FedraSansProArm';
+   margin: 0;
+   padding: 0;
+   margin: 0;
+}
+
+.page{
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+a {
+   margin: 0;
+   padding: 0;
+}
+
+/* container */
+
+.container {
+   max-width: 1320px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+/* header */
+
+header {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 100px;
+   background-color: #fff;
+}
+
+.header__container {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo__link img {
+   display: flex;
+   align-items: center;
+   max-width: 200px;
+}
+
+.changelang{
+   font-family: 'FedraSansProArm';
+   font-weight: 500;
+   padding: 0.5em;
+   border: none;
+   outline: none;
+   border-radius: 3px;
+   background-color: #eeeeee;
+}
+
+.changelang *:hover{
+   background-color: #faac0f;
+}
+
+/* section */
+
+.text{
+   margin-top: 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.title{
+   font-size: 42px;
+   font-weight: 500;
+}
+
+.subtitle{
+   letter-spacing: 5px;
+}
+
+/* footer */
+
+footer {
+   margin-top: auto;
+}
+
+.footer__inner{
+   margin-top: 7.5em;
+   background-color: #eeeeee;
+}
+
+.footer__container {
+   height: 70px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.footer__copyright {
+   font-size: calc(8px + 8 * (100vw / 1300));
+   color: #161616;
+}
+
+.socialnetworks {
+   display: flex;
+   align-items: center;
+}
+
+.socialnetworks div {
+   margin-left: 10px;
+}
+
+.socialnetworks div:first-child {
+   margin-left: 0;
+}
+
+.footer__links{
+   color: #161616;
+}
+
+.tumoicon{
+   margin-top: 4px;
+   width: 16px;
+}

@@ -5,11 +5,13 @@ const server = http.createServer(app);
 const { Server } = require('socket.io');
 const io = new Server(server);
 
-app.use(express.static(__dirname + '/public'));
-app.use('/static', express.static('static'));
+app.use(express.static('public'));
+app.use(express.static('chat.html'));
+app.use(express.static('public'));
+// app.use('/static', express.static('static'));
 
 app.get('/', (req, res) => {
-   res.sendFile(__dirname + '/chat.html');
+   res.sendFile(__dirname + '/index.html');
 });
 
 io.on('connection', socket => {

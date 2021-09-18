@@ -1,0 +1,259 @@
+/* fonts */
+
+@font-face {
+   font-family: 'FedraSansProArm';
+   src: url('../fonts/FedraSansArm-Bold.13f427c6.woff2');
+   font-weight: 700;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'FedraSansProArm';
+   src: url('../fonts/FedraSansArm-Medium.9a33237c.woff2');
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'FedraSansProArm';
+   src: url('../fonts/FedraSansArm-Book.306b15cf.woff2');
+   font-weight: normal;
+   font-style: normal;
+}
+
+/* scroll */
+
+html::-webkit-scrollbar {
+   width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+   background: #bdbdbd;
+}
+
+html::-webkit-scrollbar-track {
+   background-color: #fff;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+html,
+body {
+   font-family: 'FedraSansProArm';
+   margin: 0;
+   padding: 0;
+   margin: 0;
+}
+
+.page{
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+a {
+   margin: 0;
+   padding: 0;
+}
+
+/* container */
+
+.container {
+   max-width: 1320px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+/* header */
+
+header {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 100px;
+   background-color: #fff;
+}
+
+.header__container {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo__link img {
+   display: flex;
+   align-items: center;
+   max-width: 200px;
+}
+
+.changelang{
+   font-family: 'FedraSansProArm';
+   font-weight: 500;
+   padding: 0.5em;
+   border: none;
+   outline: none;
+   border-radius: 3px;
+   background-color: #eeeeee;
+}
+
+.changelang *:hover{
+   background-color: #faac0f;
+}
+
+/* section */
+
+.section__container {
+   display: flex;
+   justify-content: space-between;
+}
+
+.content {
+   display: flex;
+   margin-top: 6.25em;
+}
+
+.content_header {
+   display: flex;
+   font-weight: 500;
+   font-size: calc(24px + 18 * (100vw / 1300));
+}
+
+.hello {
+   max-width: 40px;
+   margin-left: 0.4em;
+}
+
+.hello img {
+   width: 100%;
+   object-fit: cover;
+}
+
+.content_subheader {
+   font-size: calc(24px + 18 * (100vw / 1300));
+}
+
+.content_title {
+   font-family: 'FedraSansProArm';
+   font-size: calc(14px + 6 * (100vw / 1300));
+   margin-top: 2.5em;
+}
+
+.btn a {
+   font-size: calc(8px + 8 * (100vw / 1300));
+   display: inline-block;
+   text-decoration: none;
+   color: #fff;
+   background: linear-gradient(45deg, #fc9642 0%, #fab62f 100%);
+   padding: 1em 1.5em;
+   border-radius: 0.25em;
+   box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+}
+
+.content_button a {
+   margin-top: 3.125em;
+}
+
+.btn a:hover {
+   background: linear-gradient(45deg, #fd801a 0%, #faac0f 100%);
+}
+
+/* effect paralax */
+
+.layer {
+   position: absolute;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+   transform-style: preserve-3d;
+   backface-visibility: hidden;
+   display: block;
+}
+
+.image {
+   position: relative;
+}
+
+.bcg {
+   max-width: 600px;
+}
+
+.bcg img {
+   width: 100%;
+   position: center;
+   object-fit: cover;
+}
+
+.img_main {
+   max-width: 400px;
+   height: auto;
+   top: 50px;
+   left: 50px;
+}
+
+.img_second {
+   max-width: 150px;
+   height: auto;
+   top: 300px;
+}
+
+.img_third {
+   max-width: 120px;
+   height: auto;
+}
+
+.img_forth {
+   max-width: 100px;
+   height: auto;
+   top: 375px;
+   left: 375px;
+}
+
+/* footer */
+
+footer {
+   margin-top: auto;
+}
+
+.footer__inner{
+   margin-top: 7.5em;
+   background-color: #eeeeee;
+}
+
+.footer__container {
+   height: 70px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.footer__copyright {
+   font-size: calc(8px + 8 * (100vw / 1300));
+   color: #161616;
+}
+
+.socialnetworks {
+   display: flex;
+   align-items: center;
+}
+
+.socialnetworks div {
+   margin-left: 10px;
+}
+
+.socialnetworks div:first-child {
+   margin-left: 0;
+}
+
+.footer__links{
+   color: #161616;
+}
+
+.tumoicon{
+   margin-top: 4px;
+   width: 16px;
+}
